@@ -1,0 +1,78 @@
+# Site settings
+title:          AI algorithm Co
+description:    "Minimal Jekyll theme for storytellers"
+baseurl:        ""
+url:            "https://aialgoco.github.io"
+
+# Google Analytics
+# google_analytics: UA—XXXXXXXX-X
+
+# Author
+author:
+  name:         AI algorithm Co
+  url:          https://aialgoco.github.io
+  email:        ai.algorithm.co@gmail.com
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+
+pagination:
+  enabled: true
+  per_gage: 5
+  permalink: '/:num/'
+  sort_field: 'date'
+  sort_reverse: true
+  title: ':title'
+  trail:
+    before: 2
+    after: 2
+
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+
+# Disqus (Set to your disqus id)
+disqus:         jekyll-tale
+
+collections:
+  sw:
+    output: ture
+    permalink: /sw/:path/
+  wh:
+    output: true
+    permalink: /wh/:path/
+
+
+#autopages:
+#  enabled: true
+#  tags:
+#    layouts:
+#      - autopage_collections_tags.html
+#     # - autopage_tags.html
+#    enabled: true
+#  categories:
+#    layouts:
+#      - autopage_cat.html
+#    enabled: true
+#  collections:
+#    enabled: true
+#    slugify:
+#      mode: 'ascii'
+#      cased: true  # Causes B+W tag to show up as it is written on the terry-pratchet-diary-2017.md page and not lowercase
