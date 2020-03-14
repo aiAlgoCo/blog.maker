@@ -1,0 +1,3 @@
+[submodule "blogoutput"]
+	path = blogoutput
+	url = https://github.com/aiAlgoCo/aiAlgoCo.github.io.git

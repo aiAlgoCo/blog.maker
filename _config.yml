@@ -7,6 +7,20 @@ url:            "https://aialgoco.github.io"
 # Google Analytics
 # google_analytics: UA—XXXXXXXX-X
 
+# for Travis CI. (shit custom gem api...) ##################
+destination: ./blogoutput
+
+production_url: https://aialgoco.github.io/
+source_url: https://github.com/aialgoco/blog.maker
+
+safe: False
+lsi: False
+
+username: aiAlgoCo
+repo: blog.maker
+branch: master
+############################################################
+
 # Author
 author:
   name:         AI algorithm Co
@@ -58,7 +72,6 @@ collections:
   wh:
     output: true
     permalink: /wh/:path/
-
 
 #autopages:
 #  enabled: true
